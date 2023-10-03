@@ -26,7 +26,13 @@ The essence of an outstanding developer experience is allowing focus on the app'
 - Automatic ABI processing to support SC `init()` arguments
 - App with Push Notifications for e.g. finished Contract builds
 
+## In-depth Description
+
+TODO
+
 ## Screenshots
+
+TODO
 
 ## Future Roadmap
 
