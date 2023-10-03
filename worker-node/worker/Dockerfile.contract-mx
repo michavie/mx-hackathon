@@ -1,0 +1,1 @@
+FROM multiversx/sdk-rust-contract-builder:v5.1.0
