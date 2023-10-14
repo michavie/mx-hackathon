@@ -23,6 +23,7 @@ The essence of an outstanding developer experience is allowing focus on the app'
 - Fully automated & deterministic smart contract builds in the cloud
 - Fully automated deployments & upgrades on Devnet and Testnet
 - One-click **Mainnet** deployments & upgrades via [xPortal](https://xportal.com) & other wallets
+- Live Build output
 - Automatic ABI processing to support SC `init()` arguments
 - App with Push Notifications for e.g. finished Contract builds
 
