@@ -45,6 +45,20 @@ TODO
 - Automatic smart contract verification on the [Explorer](https://explorer.multiversx.com)
 - Utilize AI for code analysis and auditing services
 
+## Business Case
+
+### The Problem
+
+Blockchain developers face complexities in smart contract management and deployment. Traditional methods are tedious, error-prone, and inefficient.
+
+### Target Market
+
+Spawnable targets both experienced blockchain developers and newcomers. From startups to established firms and independent developers, Spawnable is designed for anyone looking to simplify their blockchain workflow.
+
+### Market Landscape and Spawnable's Position
+
+While many tools cater to specific aspects of smart contract development, an all-encompassing solution is missing. Spawnable stands out by offering end-to-end automation, from GitHub integration to automatic deployments and intuitive UI generation. In a fragmented market, Spawnable emerges as a comprehensive, forward-looking solution.
+
 ## Hosted At
 
 The code found in this repository, including additional business logic and elements to faciliate a superb user experience, is hosted on [spawnable.io](https://spawnable.io).
