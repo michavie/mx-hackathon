@@ -46,7 +46,26 @@ Spawnable offers a streamlined and automated approach to smart contract developm
 
 ## Screenshots
 
-TODO
+- **Dashboard View**: An overview of a smart contract including its instances across networks.
+  <img src="screenshots/dashboard_view.png" alt="Dashboard View" width="600"/>
+
+- **GitHub Integration**: Git configurator for seamless GitHub repository connection.
+  <img src="screenshots/github_integration.png" alt="GitHub Integration" width="600"/>
+
+- **Deterministic Builds**: A live build process with real-time output and status updates.
+  <img src="screenshots/deterministic_builds.gif" alt="Deterministic Builds" width="600"/>
+
+- **Deployment History**: Comprehensive logs of previous deployments.
+  <img src="screenshots/deployment_history.png" alt="Deployment History" width="600"/>
+
+- **One-click Mainnet Deployment**: Mainnet deployment via [xPortal](https://xportal.com) or other wallets.
+  <img src="screenshots/mainnet_deployment.png" alt="One-click Mainnet Deployment" width="600"/>
+
+- **Smart Contract UI Generation**: Auto-generated UI from ABI for wallet interactions.
+  <img src="screenshots/ui_generation.gif" alt="Smart Contract UI Generation" width="600"/>
+
+- **Push Notifications**: Real-time updates on your mobile device regarding smart contract activities.
+  <img src="screenshots/push_notifications.jpg" alt="Push Notifications" width="600"/>
 
 ## Future Roadmap
 
