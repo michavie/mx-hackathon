@@ -29,7 +29,19 @@ The essence of an outstanding developer experience is allowing focus on the app'
 
 ## In-depth Description
 
-TODO
+Spawnable offers a streamlined and automated approach to smart contract development, deployment, and management. The platform is integrated with GitHub, enabling developers to focus solely on their code. Here's a step-by-step breakdown:
+
+- **GitHub Integration**: Connect your GitHub repository to Spawnable. Once linked, every commit you push becomes a trigger for the platform.
+
+- **Automated Builds**: Spawnable's backend initiates a build process in the cloud. This process is deterministic, ensuring that the output remains consistent across different builds with the same input.
+
+- **Automatic Deployment to Devnet and Testnet**: Upon a successful build, the platform automatically deploys the smart contract to both Devnet and Testnet. This allows for immediate testing and validation.
+
+- **One-Click Mainnet Deployments**: Ready to go live? Spawnable simplifies Mainnet deployment. With just one click, deploy your smart contract using your xPortal mobile wallet or any other compatible wallet.
+
+- **UI Generation from ABI**: Spawnable takes the ABI file and seamlessly transforms it into a user-friendly interface for smart contracts. This eliminates reliance on local scripts, making it ideal for efficient development, testing, and applications like **admin panels**.
+
+- **Push Notifications**: Stay informed in real-time. Spawnable's app provides push notifications for critical updates, such as when a contract build is completed.
 
 ## Screenshots
 
