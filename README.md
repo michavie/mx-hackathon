@@ -73,14 +73,15 @@ Spawnable offers a streamlined and automated approach to smart contract developm
 
 ## Future Roadmap
 
-- Improve UI visualization, especially for live output
-- Smart contract version management (deploy historic version)
-- Collaboration tools for teams
-- Parallelize worker-node processes
-- Self-update mechanism for worker nodes
-- Remote logging for worker nodes
-- Automatic smart contract verification on the [Explorer](https://explorer.multiversx.com)
-- Utilize AI for code analysis and auditing services
+- Improve UI visualization, especially for live output – Q4 2023
+- Collaboration tools for teams – Q4 2023
+- Self-update mechanism for worker nodes – Q4 2023
+- Remote logging for worker nodes – Q4 2023
+- Automatic smart contract verification on the [Explorer](https://explorer.multiversx.com) – Q4 2023
+- Smart contract version management (deploy historic versions) – Q1 2024
+- Parallelize worker-node processes – Q1 2024
+- Telegram, Discord & Slack notifications – Q1 2024
+- Utilize AI for code analysis and auditing services – Q2 2024
 
 ## Business Case
 
