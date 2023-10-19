@@ -17,11 +17,11 @@ The essence of an outstanding developer experience is allowing focus on the app'
 
 ## Repository Structure
 
-- [backend](./backend/): Faciliates the build queue based on business requirements.
-- [bridge](./bridge/): Interacts with the blockchain via commands received from the backend.
-- [contract](./contract/): Smart contract to manage deployments.
-- [ui-elements](./ui-elements/): Selected code snippets from the UI.
-- [worker-node](./worker-node/): Work off the queue and informs the backend of build results.
+- [backend](./backend/): Faciliates the build queue based on business requirements, written in Laravel/PHP.
+- [bridge](./bridge/): Interacts with the blockchain via commands received from the backend, written in TypeScript.
+- [contract](./contract/): Smart contract to manage deployments, written in Rust.
+- [frontend](./frontend/): Selected code snippets from the UI, written in React.
+- [worker-node](./worker-node/): Work off the queue and informs the backend of build results, written in Go.
 
 ## The Architecture
 
