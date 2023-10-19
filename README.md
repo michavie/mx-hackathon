@@ -18,6 +18,10 @@ The essence of an outstanding developer experience is allowing focus on the app'
 - [ui-elements](./ui-elements/): Selected code snippets from the UI.
 - [worker-node](./worker-node/): Work off the queue and informs the backend of build results.
 
+## The Architecture
+
+<img src="screenshots/flow.png" alt="Flow" width="600"/>
+
 ## Highlighted Features
 
 - Deterministic smart contract builds in the cloud
