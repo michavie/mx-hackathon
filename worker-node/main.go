@@ -36,6 +36,7 @@ func main() {
 		})
 		if err != nil {
 			fmt.Println("Error running repo:", err)
+			continue
 		}
 
 		time.Sleep(1 * time.Second)

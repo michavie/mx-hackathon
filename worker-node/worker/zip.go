@@ -8,14 +8,18 @@ import (
 	"path/filepath"
 )
 
+// ZipManager is a type responsible for handling the
+// creation of zip archives.
 type ZipManager struct{}
 
+// NewZipManager returns a new instance of ZipManager.
 func NewZipManager() *ZipManager {
 	return &ZipManager{}
 }
 
+// ZipFiles creates a zip archive with the provided filename
+// and adds the given files to it.
 func (zm *ZipManager) ZipFiles(zipFilename string, files []string) error {
-	// Confirming files to be zipped
 	fmt.Println("Files to be zipped:", files)
 
 	newZipFile, err := os.Create(zipFilename)
@@ -24,7 +28,6 @@ func (zm *ZipManager) ZipFiles(zipFilename string, files []string) error {
 	}
 	defer newZipFile.Close()
 
-	// Confirming zip creation location
 	fmt.Println("Creating zip at:", zipFilename)
 
 	writer := zip.NewWriter(newZipFile)
@@ -43,8 +46,10 @@ func (zm *ZipManager) ZipFiles(zipFilename string, files []string) error {
 	return nil
 }
 
+// A helper method to add a file or a directory
+// to the provided zip writer. If a directory is provided,
+// it will recursively add its contents to the zip archive.
 func (zm *ZipManager) addToZip(writer *zip.Writer, filename string, zipPath string) error {
-	// Confirming when a file is being added to the zip
 	fmt.Println("Adding to zip:", filename)
 
 	fileInfo, err := os.Stat(filename)

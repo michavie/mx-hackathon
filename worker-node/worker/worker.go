@@ -19,6 +19,7 @@ import (
 	"github.com/docker/docker/client"
 )
 
+// Represents a worker responsible for managing containers, building images, and executing commands.
 type Worker struct {
 	Container  *client.Client
 	ZipManager *ZipManager
@@ -26,6 +27,7 @@ type Worker struct {
 	Image      string
 }
 
+// Returns an initialized Worker instance.
 func NewWorker() (*Worker, error) {
 	cli, err := client.NewClientWithOpts(client.FromEnv, client.WithAPIVersionNegotiation())
 	if err != nil {
@@ -35,10 +37,10 @@ func NewWorker() (*Worker, error) {
 	return &Worker{Container: cli, ZipManager: NewZipManager(), Storage: NewStorage()}, nil
 }
 
+// Builds a Docker image using the provided Dockerfile.
 func (w *Worker) BuildImage(dockerfile string) error {
 	ctx := context.Background()
 
-	// Create a tarball of the Dockerfile to send to Docker.
 	buf := new(bytes.Buffer)
 	tw := tar.NewWriter(buf)
 	defer tw.Close()
@@ -82,6 +84,7 @@ func (w *Worker) BuildImage(dockerfile string) error {
 	return err
 }
 
+// Starts executing commands based on the provided instructions.
 func (w *Worker) Start(instruction *common.RunInstruction, output func(result common.RunResult)) error {
 	fmt.Println("Starting new worker for run Id:", instruction.RunId)
 
@@ -91,6 +94,11 @@ func (w *Worker) Start(instruction *common.RunInstruction, output func(result co
 		commands = append(commands, "git clone https://x-access-token:"+instruction.GithubOAuthToken+"@github.com/"+instruction.GithubRepoName+".git .")
 	} else {
 		commands = append(commands, "git clone https://github.com/"+instruction.GithubRepoName+" .")
+	}
+
+	if instruction.Settings.RootDir != "" {
+		fmt.Println("Changing directory to:", instruction.Settings.RootDir)
+		commands = append(commands, "cd "+instruction.Settings.RootDir)
 	}
 
 	commands = append(commands, instruction.Steps...)
@@ -246,6 +254,11 @@ func (w *Worker) runCommand(instruction *common.RunInstruction, ctx context.Cont
 		}
 		if !execInspect.Running {
 			if execInspect.ExitCode != 0 {
+				output(common.RunResult{
+					RunId:  instruction.RunId,
+					Status: common.RunStatusFailed,
+					Output: "Run finished with error: " + fmt.Sprintf("%v", execInspect.ExitCode),
+				})
 				return fmt.Errorf("Command finished with error: %v", execInspect.ExitCode)
 			}
 			break

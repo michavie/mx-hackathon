@@ -17,12 +17,17 @@ var (
 )
 
 type RunInstruction struct {
-	RunId               string   `json:"runId"`
-	RunType             RunType  `json:"runType"`
-	GithubRepoName      string   `json:"githubRepoName"`
-	GithubOAuthToken    string   `json:"githubOAuthToken"`
-	Steps               []string `json:"steps"`
-	RunnerVersionLatest int      `json:"runnerVersionLatest"`
+	RunId               string      `json:"runId"`
+	RunType             RunType     `json:"runType"`
+	GithubRepoName      string      `json:"githubRepoName"`
+	GithubOAuthToken    string      `json:"githubOAuthToken"`
+	Steps               []string    `json:"steps"`
+	Settings            RunSettings `json:"settings"`
+	RunnerVersionLatest int         `json:"runnerVersionLatest"`
+}
+
+type RunSettings struct {
+	RootDir string `json:"rootDir"`
 }
 
 type RunResult struct {
