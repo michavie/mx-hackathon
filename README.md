@@ -1,5 +1,8 @@
 # Spawnable: A Smart Contract Automation Platform
 
+- Demo Video: [Watch on Youtube](https://youtu.be/R6o-lzoiW9Q)
+- iOS App with Push: [Join TestFlight](https://testflight.apple.com/join/JLDx8P56)
+
 ## Summary
 
 Developing smart contracts is often a daunting task for the average developer. Beyond merely crafting the core business logic, they must also manage a myriad of other responsibilities, typically through local scripts. This introduces unnecessary complexity, making the development process tedious and error-prone.
