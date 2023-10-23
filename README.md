@@ -3,7 +3,7 @@
 - Demo Video: [Watch on Youtube](https://youtu.be/R6o-lzoiW9Q)
 - iOS App with Push: [Join TestFlight](https://testflight.apple.com/join/JLDx8P56)
 
-Note: Spawnable.io is an existing platform building (focusing on Metaverse products) and specifically **its new MultiversX Smart Contract module** has been created as part of the hackathon. The **new MultiversX Smart Contract module** was developed as part of the hackathon. The entire worker node code is included since it's a distinct code base, whereas other sections only feature module-specific code.
+Note: The **new MultiversX Smart Contract module** was developed as part of the hackathon. The entire worker node code is included since it's a distinct code base, whereas other sections only feature module-specific code.
 
 ## Summary
 
